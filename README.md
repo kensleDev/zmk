@@ -12,3 +12,11 @@ Check out the website to learn more: https://zmkfirmware.dev/
 You can also come join our [ZMK Discord Server](https://zmkfirmware.dev/community/discord/invite)
 
 To review planned features, check out the [enhancement label](https://github.com/zmkfirmware/zmk/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement) in GitHub. Please feel free to add 👍 to the issue description of any requests to upvote the feature.
+
+
+
+west test -b nice_nano -- -DSHIELD=corne_left -DZMK_CONFIG="/workspaces/zmk-config/config"
+
+west build -b nice_nano -- -DSHIELD=corne_right -DZMK_CONFIG="/workspaces/zmk-config/config"
+
+west flast
